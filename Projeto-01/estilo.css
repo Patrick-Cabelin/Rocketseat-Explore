@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+*{
+    margin:0px ;
+    padding:0px ;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    text-align:center;
+}
+
+.hero{
+    width: 592px ;
+    margin: 0 auto 72px;
+}
+
+.hero img{
+    margin-bottom: 72px ;
+}
+
+h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 49px;
+    line-height: 56px;
+
+    margin-bottom: 32px;
+}
+h1 span{
+    font-weight: bold ;
+}
+span, a{
+    color: #ff9900;
+}
+
+p{
+    font-size: 14px;
+    line-height: 28px;
+    color: #7d7987;
+}
+.bolinhas{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+.line{
+    width: 568px;
+    height: 0px;
+    border: 1px solid #eceff2;
+    margin: 0px auto 8px;
+}
+
+footer a {
+    font-size: 14px;
+    text-decoration: none;
+
+}
+footer a + a{
+    margin-left: 28px;
+}
+footer a:hover{
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: underline;
+}
