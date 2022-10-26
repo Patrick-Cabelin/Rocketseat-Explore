@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+    <title>Formulário De Mentoria</title>
+</head>
+<body>
+
+<div class="retagulo"></div>
+<div class="pag">
+
+        <header>
+            <h1>Mentoria</h1>
+            <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+        </header>
+    
+        <form >
+            <fieldset>
+                <h2>Informações Pessoais</h2>
+
+                <div class="fieldcapsula">
+
+                    <div class="nome">
+                        <div class="capsula">
+                            <label for="i-nome">Nome</label>
+                            <input type="text" id="i-nome" required>
+                        </div>
+                        <div class="capsula">
+                            <label for="i-sobrenome">Sobrenome</label>
+                            <input type="text" id="i-sobrenome" required>
+                        </div>
+                    </div>
+
+                    <div class="capsula">
+                        <label for="i-email">Email <span>(Digíte um email valido)</span></label>
+                        <input type="email" id="i-email" required>
+                    </div>
+                    <div class="capsula">
+                        <label for="i-senha">Senha <span>(Minímo de 6 caracteres)</span></label>
+                        <input type="password" id="i-senha" required minlength="6">
+                    </div>
+                </div>
+            </fieldset>
+    
+            <fieldset>
+                <h2>Informações do Mentor</h2>
+
+            <div class="fieldcapsula">
+
+                <div class="capsula">
+                    <label for="i-mentor">Nome do seu Mentor <span>(só o primeiro nome)</span></label>
+                    <input type="text" id="i-mentor" required>
+                </div>
+    
+                <h2>Seus horários disponíveis</h2>
+    
+                <div class="tempo">
+                        <h2>Primeira Mentoria</h2>
+
+                    <div class="horario">
+                        <div class="capsula">
+                            <label for="d-primeiraMentoria"> <span>Data (DD/MM/AAAA)</span></label>
+                            <input type="date" id="d-primeiraMentoria">
+                        </div>
+                        <div class="capsula">
+                            <label for="inicio">Início</label>
+                            <input required type="time" id="inicio">
+                        </div>
+                        <div class="capsula">
+                            <label for="Final">Final</label>
+                            <input required type="time" id="Final">
+                        </div>
+                    </div>
+
+                    <h2>Segunda Mentoria</h2>
+
+                    <div class="horario">
+                        <div class="capsula">
+                            <label for="d-segundaMentoria">Data <span>(DD/MM/AAAA)</span></label>
+                            <input type="date" id="d-segundaMentoria">
+                        </div>
+                        <div class="capsula">
+                            <label for="inicio">Início</label>
+                            <input required placeholder="00h" type="time" id="comeco">
+                        </div>
+                        <div class="capsula">
+                            <label for="Final">Final</label>
+                            <input required placeholder="00h" type="time" id="termino">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            </fieldset>
+    
+        </form>
+        <footer><button>Salvar</button></footer>
+    </div>
+</body>
+</html>

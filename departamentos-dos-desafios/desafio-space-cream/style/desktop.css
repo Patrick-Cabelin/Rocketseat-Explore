@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+
+body{
+    display:flex;
+    flex-direction: row;
+}
+
+header{
+    width: 37.7rem;
+    height: 72rem;
+    animation: headerAppear.5s .45s backwards;
+
+}
+
+.about{
+    width: 27.5rem;
+
+    width: clamp(22.5rem, 3rem + 1vw, 33.7rem);
+    font-size: clamp(0.5rem, 0.5rem + 2.9vw , 2rem);
+
+    position:absolute;
+    top:31.6rem;
+    left: 2.5rem;
+
+    animation: headerAppear.5s .45s backwards;
+}
+
+main{
+    width: 100%;
+    margin-top: .5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 3.2rem;
+
+
+}
+.card span{
+    display: none;
+}
+
+.card img{
+    width: 22rem;
+    height: auto;
+}
+
+.grade{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 3.2rem;
+    margin: 6.4rem 8.1rem 5rem 9.8rem;
+    grid-template-areas:
+    "PALETA PICOLE SORVETE"
+    "SHAKE PICOLE SPLIT "
+    "SHAKE MASSA SPLIT"; 
+}
+
+.grade .card:nth-child(1){
+    grid-area: PALETA;
+    animation: appearToTop .7s .55s backwards ;
+}
+
+.grade .card:nth-child(2){
+    grid-area: SHAKE;
+    animation: appearToDown .5s .65s backwards;
+}
+
+.grade .card:nth-child(3){
+    grid-area: MASSA;
+    animation: appearToTop .7s .55s backwards ;
+}
+
+.grade .card:nth-child(4){
+    grid-area: PICOLE;
+    animation: appearToDown .5s .65s backwards;
+}
+
+.grade .card:nth-child(5){
+    grid-area: SORVETE;
+    animation: appearToTop .7s .55s backwards ;
+    display: block;
+}
+
+.grade .card:nth-child(6){
+    grid-area: SPLIT;
+    animation: appearToDown .5s .65s backwards;
+    display: block;
+}
+
+footer{
+    display:block;
+    position: absolute;
+    top: 63rem;
+    left: 65rem;
+
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    text-align: center;
+    color: var(--color-one);
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #26264e;
+}
+
+footer a:hover{
+    font-size: 1.7rem;
+    color: #37378b;
+    cursor: pointer;
+}
