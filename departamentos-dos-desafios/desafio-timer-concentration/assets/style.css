@@ -1,0 +1,95 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+
+    --sound-select-light: #02799D;
+    --sound-select-default: #1414eb;
+    --select-icon: #ffffff;
+
+    --bg-light:#d1d1d4;
+    --bg-default: #000000;
+}
+
+body{
+    display: grid;
+    place-content: center;
+
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--bg-default);
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    gap: 19.2rem;
+
+    width: 82.1rem;
+
+}
+
+span{
+    font-family: 'Roboto';
+
+    font-size: 12.6rem;
+    line-height: 14.8rem;
+    text-align: center;
+
+    color: var(--sound-select-default);
+}
+
+.crono{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 32.1rem;
+}
+
+.controls{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: space-evenly;
+
+}
+
+.ambience{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+    
+    width: 30.8rem;
+}
+
+.play, .stop, .more, .less, .florest, .rain, .coffeeShop, .bonfire{
+    cursor: pointer;
+}
+
+.play svg path, .stop svg path, .more svg path, .less svg path{
+    fill: var(--sound-select-default);
+}
+
+/* .florest svg path, .rain svg path, .coffeeShop svg path, .bonfire svg path{} */
+
+.light svg path + path{
+    fill: var(--select-icon);
+} 
+
+.light svg path{
+    fill:var(--sound-select-light);
+}
+
+.select svg path + path{
+    fill:var(--select-icon);
+}
+
+.select svg path {
+    fill: var(--sound-select-default);
+}
